@@ -1,9 +1,6 @@
 package com.lab308.lab308ComplexRelationships.EventManagement.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -22,6 +19,7 @@ public class Event {
 
     private String title;
 
+    @OneToMany
     private List<Guest> guests;
 
     public Event() {

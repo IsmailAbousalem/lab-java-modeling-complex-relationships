@@ -1,4 +1,8 @@
 package com.lab308.lab308ComplexRelationships.EventManagement.Model;
 
-public class Exposition {
+import jakarta.persistence.Entity;
+
+@Entity
+public class Exposition extends Event {
+    // Additional properties and methods (if any)
 }
